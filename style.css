@@ -1,0 +1,108 @@
+/* style.css */
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #faf3f3; /* Light pastel pink */
+    margin: 0;
+    padding: 0;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+    height: 100vh;
+}
+
+h1 {
+    display: block;
+    color: #7e37cf;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    display: block;
+    color: #777;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* To-Do Container */
+#items {
+    /*display: flex;
+    justify-content: center;*/
+    margin-left: 38%;
+    background-color: #ffffff; /* White */
+    padding: 20px;
+    width: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.input-container {
+    display: flex;
+    flex-direction: column; /* Stack input and button vertically */
+    align-items: center; /* Center align input and button */
+    gap: 10px; /* Add spacing between input and button */
+}
+
+/* Input and Button */
+#itemInput {
+    width: 50%;
+    padding: 10px;
+    /*margin-right: 10px;*/
+    border: 1px solid #ececec; /* Light grey */
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.05);
+    background-color: #d19cdf; /* Very light lavender */
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #f7b2b7; /* Pastel pink */
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f79f9f; /* Slightly darker pastel pink */
+}
+
+/* To-Do Items */
+.item {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fef3bd; /* Pastel yellow */
+    border-left: 5px solid #b5e7a0; /* Pastel green */
+    border-radius: 5px;
+    font-size: 1.1rem;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item:hover {
+    background-color: #fde3a7; /* Slightly darker pastel yellow */
+}
+
+.item button {
+    background-color: transparent;
+    border: none;
+    color: #f67280; /* Pastel red */
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.item button:hover {
+    color: #f44460; /* Slightly darker pastel red */
+}
